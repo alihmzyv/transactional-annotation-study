@@ -1,4 +1,4 @@
-package com.alihmzyv.transactionalannotationstudy.aspect;
+package com.alihmzyv.transactionalannotationstudy.intro.aspect;
 
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.annotation.Aspect;
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Aspect
 public class LoggableAspect {
-    @Before("@annotation(com.alihmzyv.transactionalannotationstudy.annotation.Loggable)")
+    @Before("@annotation(com.alihmzyv.transactionalannotationstudy.intro.annotation.Loggable)")
     public void myAdvice(){
         log.info("Executing @Loggable advice");
     }

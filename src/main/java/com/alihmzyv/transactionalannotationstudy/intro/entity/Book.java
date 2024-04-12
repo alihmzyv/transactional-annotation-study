@@ -1,4 +1,4 @@
-package com.alihmzyv.transactionalannotationstudy.entity;
+package com.alihmzyv.transactionalannotationstudy.intro.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;

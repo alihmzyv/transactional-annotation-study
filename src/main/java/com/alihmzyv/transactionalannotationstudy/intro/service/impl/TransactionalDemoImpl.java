@@ -1,8 +1,8 @@
-package com.alihmzyv.transactionalannotationstudy.service.impl;
+package com.alihmzyv.transactionalannotationstudy.intro.service.impl;
 
-import com.alihmzyv.transactionalannotationstudy.annotation.Loggable;
-import com.alihmzyv.transactionalannotationstudy.entity.Book;
-import com.alihmzyv.transactionalannotationstudy.repository.BookRepository;
+import com.alihmzyv.transactionalannotationstudy.intro.annotation.Loggable;
+import com.alihmzyv.transactionalannotationstudy.intro.entity.Book;
+import com.alihmzyv.transactionalannotationstudy.intro.repository.BookRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;

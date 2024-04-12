@@ -1,6 +1,6 @@
-package com.alihmzyv.transactionalannotationstudy;
+package com.alihmzyv.transactionalannotationstudy.intro;
 
-import com.alihmzyv.transactionalannotationstudy.service.impl.TransactionalDemoImpl;
+import com.alihmzyv.transactionalannotationstudy.intro.service.impl.TransactionalDemoImpl;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
