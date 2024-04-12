@@ -20,6 +20,8 @@ public class Starter implements CommandLineRunner {
         log.info("Injected type: {}", transactionalDemo.getClass());
 //        transactionalDemo.callTest1(); //does not cause the advice to be executed due to proxy pattern design
 
+//        transactionalDemo.test1();
+
         transactionalDemo.test1();
     }
 }

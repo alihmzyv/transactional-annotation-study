@@ -1,21 +1,25 @@
 package com.alihmzyv.transactionalannotationstudy.service.impl;
 
+import com.alihmzyv.transactionalannotationstudy.annotation.Loggable;
 import com.alihmzyv.transactionalannotationstudy.entity.Book;
 import com.alihmzyv.transactionalannotationstudy.repository.BookRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
-
+@Slf4j
 @RequiredArgsConstructor
 @Service
 public class TransactionalDemoImpl {
     private final BookRepository bookRepository;
 
     @SneakyThrows
+    @Loggable
     @Transactional(rollbackOn = Exception.class)
-    public void test1() throws Exception {
+    public void test1() {
+        log.info("Class: {}", this.getClass());
         Book book1 = new Book();
         book1.setName("Book 1");
         bookRepository.save(book1);
@@ -27,7 +31,8 @@ public class TransactionalDemoImpl {
         bookRepository.save(book2);
     }
 
+
     public void callTest1() {
-        callTest1();
+        test1();
     }
 }
